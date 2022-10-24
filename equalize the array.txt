@@ -1,0 +1,19 @@
+ public static int equalizeArray(List<Integer> arr) {
+    // Write your code here
+         final int upper_limit = 100;
+        int[] intArray = new int[100];
+        int maxCount =0;
+        
+        for(int each_element : arr){
+            intArray[each_element - 1] += 1;
+        }
+        
+        for(int i=0; i<upper_limit; i++){
+            if(intArray[i] > maxCount)
+                maxCount = intArray[i];
+        }
+    return arr.size()-maxCount;
+
+    }
+
+}

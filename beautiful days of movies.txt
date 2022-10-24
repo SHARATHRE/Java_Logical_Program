@@ -1,0 +1,21 @@
+public static int beautifulDays(int i, int j, int k) {
+    // Write your code here
+         int count =0; 
+        for(int a=i; a<=j; a++){
+            int num = a;
+            int reverse = 0;
+            while(num != 0){
+                int rem = num%10;
+                reverse = reverse*10 + rem;
+                num = num / 10;
+            }
+            int difference = Math.abs(a-reverse);
+            if(difference % k == 0)
+                count++;
+        }
+        return count;
+
+
+    }
+
+}

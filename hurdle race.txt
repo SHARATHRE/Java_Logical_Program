@@ -1,0 +1,13 @@
+public static int hurdleRace(int k, List<Integer> height) {
+    // Write your code here
+        int maxElement = Collections.max(height);
+        
+        if(k>maxElement)
+            return 0;
+        else
+            return maxElement-k;
+
+
+    }
+
+}

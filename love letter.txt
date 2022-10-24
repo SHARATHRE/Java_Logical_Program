@@ -1,0 +1,12 @@
+public static int theLoveLetterMystery(String s) {
+    // Write your code here
+         int count = 0, n = s.length();
+        
+        for(int i=0; i<n/2; i++){
+            count = count + Math.abs(s.charAt(i) - s.charAt(n-i-1));
+        }
+    return count;
+
+    }
+
+}

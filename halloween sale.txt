@@ -1,0 +1,20 @@
+ public static int howManyGames(int p, int d, int m, int s) {
+    // Return the number of games you can buy
+        int count =0;
+        
+        while(s>=m){
+            if(p>s)
+                return count;
+            s = s-p;
+            count++;
+            
+            if(p-d < m)
+                p=m;
+            else
+                p=p-d;
+        }
+    return count;
+
+    }
+
+}

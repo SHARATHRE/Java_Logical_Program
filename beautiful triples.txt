@@ -1,0 +1,14 @@
+public static int beautifulTriplets(int d, List<Integer> arr) {
+    // Write your code here
+        int num_of_beautiful_triplets = 0;
+
+        for(int a: arr){
+            if(Collections.binarySearch(arr ,a+d) >=0 && Collections.binarySearch(arr, a+d*2) >= 0)
+                num_of_beautiful_triplets++;
+        }
+    return num_of_beautiful_triplets;
+    
+
+    }
+
+}

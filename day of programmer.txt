@@ -1,0 +1,22 @@
+public static String dayOfProgrammer(int year) {
+    // Write your code here
+      String s = ".09."+Integer.toString(year);
+        
+        if(year == 1918){
+            return "26"+s;
+        }
+        else if(year > 1918){
+            if((year%4 == 0 && year%100 != 0) || year%400 == 0)
+                return "12"+s;
+            else
+                return "13"+s;
+        }
+        else{
+            if(year%4 == 0)
+                return "12"+s;
+            else
+                return "13"+s;
+        }
+    }
+
+}

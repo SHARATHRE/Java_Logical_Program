@@ -1,0 +1,28 @@
+public static List<Integer> breakingRecords(List<Integer> scores) {
+    // Write your code here
+        int maxcount=0;
+        int mincount=0;
+        int maxvalue=scores.get(0);
+        int minvalue=scores.get(0);
+        for(int i=1;i<scores.size();i++)
+        {
+            int val =scores.get(i);
+            if(val>maxvalue)
+            {
+                maxvalue=val;
+                maxcount++;
+            }
+            if(val<minvalue)
+            {
+                minvalue=val;
+            mincount++;
+            }
+        }
+        ArrayList<Integer> al=new ArrayList<>();
+        al.add(maxcount);
+        al.add(mincount);
+        return al;
+
+    }
+
+}

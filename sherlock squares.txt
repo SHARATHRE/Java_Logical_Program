@@ -1,0 +1,10 @@
+ public static int squares(int a, int b) {
+    // Write your code here
+       int i = (int)(Math.ceil(Math.sqrt(a)));
+        int j = (int)(Math.floor(Math.sqrt(b)));
+        
+        return j-i+1;
+
+    }
+
+}

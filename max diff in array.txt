@@ -1,0 +1,15 @@
+public static int minimumAbsoluteDifference(List<Integer> arr) {
+    // Write your code here
+        int minAbsoluteDiiference = Integer.MAX_VALUE;
+        
+        Collections.sort(arr);
+        
+        for(int i=0; i<arr.size()-1; i++){
+            int currentAbsoluteDifference = Math.abs(arr.get(i)-arr.get(i+1));
+            minAbsoluteDiiference = Math.min(minAbsoluteDiiference, currentAbsoluteDifference);
+        }
+        return minAbsoluteDiiference;
+
+    }
+
+}

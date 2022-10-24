@@ -1,0 +1,22 @@
+1.sales match
+-----------------------------------------------------------
+public static int sockMerchant(int n, List<Integer> ar) {
+    // Write your code here
+        int i,c=0;
+        HashSet<Integer> hs =new HashSet<Integer>();
+        for(i=0;i<n;i++)
+        {
+            if(!hs.contains(ar.get(i)))
+               {
+                   hs.add(ar.get(i));
+               }
+               else
+               {
+                   hs.remove(ar.get(i));
+                   c++;
+               }
+        }
+               return c;
+    }
+
+}
